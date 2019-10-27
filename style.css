@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic');
+
+html {
+    font-family: 'PT Mono', Consolas, monospace;
+    font-size: 18px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2rem;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+footer {
+    text-align: center;
+    color: #555;
+}
